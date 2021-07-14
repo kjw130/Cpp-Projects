@@ -39,7 +39,6 @@ class App
 
             user_pay.public_holiday_rate = user_pay.payrate*2;
 
-
         Weekdays weekday;
         float weekly_hours = weekday.hours;
         float weekday_pay = weekday.calc_pay(user_pay.payrate, weekly_hours);
@@ -51,8 +50,7 @@ class App
         Sunday sunday;
         float sunday_hours = sunday.hours;
         float sunday_pay = sunday.calc_pay(user_pay.sunday_rate, sunday_hours);
-
-        
+     
         std::cout << "Are you working on a public holiday this week?";
         std::string pub_hol = Utils::yes_or_no();
         Publicholiday publicholiday;
@@ -60,8 +58,7 @@ class App
         float public_holiday_pay;
 
         if(pub_hol=="y")
-        {
-            
+        {            
             public_holiday_hours = publicholiday.hours;
             public_holiday_pay = publicholiday.calc_pay(user_pay.public_holiday_rate, public_holiday_hours);
         }
@@ -105,22 +102,10 @@ class App
             exit(0);
         }
 
-
-
-
-
         }
         }
-
-       
-            
-        
+                       
 };
-
-
-
-
-
 
 int main()
 {
