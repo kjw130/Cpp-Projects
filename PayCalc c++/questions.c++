@@ -46,11 +46,3 @@ namespace Questions
     }
 }
 
-
-
-// int main()
-// {
-    
-
-//     return 0;
-// }
